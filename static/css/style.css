@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    /*background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));*/
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.hero__content {
+    text-align: center;
+}
+
+.hero__content h1 {
+    font-size: 12rem;
+    color: rgba(161, 24, 0, 0);
+    font-weight: 600;
+    font-family: 'Gloria Hallelujah', cursive;
+    line-height: 100%;
+    z-index: 10;
+}
+
+@media (max-width: 1200px) {
+    .hero__content h1 {
+        line-height: 100%;
+        font-size: 15rem;
+    }
+}
+
+
+
+.hero__content a {
+    align-items: flex-end;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    border: 2px solide #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+}
+
+@media (max-width: 1200px) {
+    .hero__content a {
+        font-size: 3rem;
+    }
+}
+
+.hero__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .hero__video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .hero__video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.three_canvas {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+
+}
