@@ -25,7 +25,8 @@
 }
 
 .hero__content h1 {
-    font-size: 12rem;
+    height: 700px;
+    font-size: 0rem;
     color: rgba(161, 24, 0, 0);
     font-weight: 600;
     font-family: 'Gloria Hallelujah', cursive;
@@ -36,7 +37,7 @@
 @media (max-width: 1200px) {
     .hero__content h1 {
         line-height: 100%;
-        font-size: 15rem;
+        font-size: 0rem;
     }
 }
 
@@ -85,6 +86,6 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: -5;
+    z-index: 20;
 
 }
