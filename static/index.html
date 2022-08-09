@@ -108,10 +108,18 @@
                     controls.addEventListener('change', renderer);
                     hero.appendChild(renderer.domElement);
 
+                    let scaleValue = 1
+                    if (window.innerWidth < 1000) {
+                        scaleValue = 0.75;
+                    }
+                    if (window.innerWidth < 1000) {
+                        scaleValue = 0.75;
+                    }
+
                     let loader = new THREE.GLTFLoader();
                     loader.load('./public/3d/model.gltf', function (gltf) {
                         car = gltf.scene.children[0];
-                        car.scale.set(1, 1, 1);
+                        car.scale.set(scaleValue, scaleValue, scaleValue);
                         car.position.set(0, -100, 0)
                         scene.add(gltf.scene);
                         animate();
@@ -131,7 +139,7 @@
 
         <div class="hero__content">
             <h1>DON'T SLIP JUST DRIP</h1>
-            <a href="#">STORE</a>
+            <a href="https://www.depop.com/dontslip_justdrip/">STORE ></a>
         </div>
 
 

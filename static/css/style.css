@@ -25,7 +25,6 @@
 }
 
 .hero__content h1 {
-    height: 700px;
     font-size: 0rem;
     color: rgba(161, 24, 0, 0);
     font-weight: 600;
@@ -44,20 +43,24 @@
 
 
 .hero__content a {
-    align-items: flex-end;
-    position: relative;
     text-decoration: none;
-    display: inline-block;
     color: white;
     font-size: 2rem;
-    border: 2px solide #fff;
-    padding: 14px 70px;
-    border-radius: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 2% 3%;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .hero__content a {
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 0px) {
+    .hero__content a {
+        font-size: 6rem;
     }
 }
 
@@ -86,6 +89,6 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: 20;
+    z-index: 0;
 
 }
